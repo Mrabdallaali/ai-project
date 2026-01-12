@@ -7,6 +7,7 @@ export const intakeNaturalLanguageQuery: RequestHandler = async (
     next: NextFunction
 ) => {
     if (!req.body.naturalLanguageQuery) {
+        // handle try catch error
         const error: ServerError = {
             log: 'User natural language input does not exist',
             status: 400,
