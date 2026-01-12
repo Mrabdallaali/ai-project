@@ -3,9 +3,9 @@ import { ServerError } from '../types';
 
 import OpenAI from 'openai';
 
-const openai = new OpenAI({
-  apiKey: process.env.OPENAI_API_KEY,
-});
+// const openai = new OpenAI({
+//   apiKey: process.env.OPENAI_API_KEY,
+// });
 
 export const convertToSQL: RequestHandler = async (req, res) => {
   try {
