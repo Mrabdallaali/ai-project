@@ -55,7 +55,6 @@ User Input (plain English)
 |---|---|
 | Pre-execution validation | Generated SQL is checked against an allowlist of permitted query structures |
 | Data sanitization | Inputs are stripped of potentially harmful characters or patterns |
-| Restricted DB access | Backend connects via a read-only PostgreSQL role |
 
 ---
 
@@ -79,7 +78,7 @@ User Input (plain English)
 ### Installation
 ```bash
 git clone https://github.com/your-username/nl-analytics-engine.git
-cd nl-analytics-engine
+cd ai-projec
 npm install
 ```
 
