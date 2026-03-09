@@ -62,9 +62,9 @@ User Input (plain English)
 
 | Plain English | Generated SQL |
 |---|---|
-| *"How many users signed up last month?"* | `SELECT COUNT(*) FROM users WHERE created_at >= DATE_TRUNC('month', NOW() - INTERVAL '1 month')` |
-| *"Show me total revenue by product category"* | `SELECT category, SUM(revenue) FROM orders GROUP BY category` |
-| *"Who are the top 5 customers by order value?"* | `SELECT customer_name, SUM(order_total) FROM orders GROUP BY customer_name ORDER BY SUM(order_total) DESC LIMIT 5` |
+| *"Who are the most watched streamers right now?"* | `SELECT streamer_name, SUM(viewer_count) FROM streams GROUP BY streamer_name ORDER BY SUM(viewer_count) DESC LIMIT 10` |
+| *"How many hours were streamed last week?"* | `SELECT SUM(duration_hours) FROM streams WHERE started_at >= NOW() - INTERVAL '7 days'` |
+| *"Which game category has the most viewers?"* | `SELECT category, SUM(viewer_count) FROM streams GROUP BY category ORDER BY SUM(viewer_count) DESC LIMIT 5` |
 
 ---
 
