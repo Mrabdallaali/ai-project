@@ -78,7 +78,7 @@ User Input (plain English)
 ### Installation
 ```bash
 git clone https://github.com/your-username/nl-analytics-engine.git
-cd ai-projec
+cd ai-project
 npm install
 ```
 
