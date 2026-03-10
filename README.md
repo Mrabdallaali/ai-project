@@ -88,13 +88,13 @@ Create a `.env` file in the root:
 ```env
 OPENAI_API_KEY=your_openai_api_key
 DATABASE_URL=postgresql://user:password@localhost:5432/your_db
-PORT=3000
+PORT=3001
 ```
 
 ### Run
 ```bash
 npm run server   # Start backend
-npm run client   # Start frontend
+npm run dev   # Start frontend
 ```
 
 ---
